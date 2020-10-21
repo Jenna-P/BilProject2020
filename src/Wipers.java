@@ -8,7 +8,7 @@ public class Wipers {
       EnumTest.Weather.valueOf("SNOWY");
       frontWipers = true;
       backWipers = true;
-        System.out.println("Vinduesvisker er tændt");
+        System.out.println("vinduesvisker er tændt");
 
       }
 

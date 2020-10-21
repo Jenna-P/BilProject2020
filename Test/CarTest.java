@@ -31,8 +31,6 @@ class CarTest {
 
     }
 
-
-
     private static void testStartEngine() {
         Car c1 = new Car();
         CarKey key = new CarKey("pw:1234");
@@ -84,7 +82,7 @@ class CarTest {
     }
 
     private static void testEnum1() {
-        System.out.println("Vejret : " + EnumTest.Weather.valueOf("RAINY"));
+        System.out.println("Vejret : " + EnumTest.Weather.valueOf("SNOWY"));
     }
 
 }
