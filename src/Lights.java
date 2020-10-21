@@ -19,7 +19,7 @@ public class Lights {
     }
 
     void turnLightsOff(){
-        System.out.println("For og bag lys er IKKE tændt.");
+        System.out.println("For og bag lys er slukket.");
     }
 
 

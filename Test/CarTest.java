@@ -1,5 +1,3 @@
-import java.util.WeakHashMap;
-
 class CarTest {
 
 
@@ -12,6 +10,8 @@ class CarTest {
 
 
         System.out.println("Testsuiten kører.");
+        System.out.println("  Test 0 (Enum):");
+        testEnum();
         System.out.println("  Test 1 (Bilen skal være tændt):");
         testStartEngine();
         System.out.println("  Test 2 (Gear skal skifte hvis hestigheden og rpm stiger) : ");
@@ -23,6 +23,9 @@ class CarTest {
         testHeatAndAirconOn();
         System.out.println("  Test 5 (Bilen skal være slukket):");
         testStopEngine();
+        System.out.println("  Test 6 (Wiper tænder hvis det regner eller sner):");
+        testEnum1();
+        testwiper();
 
 
 
@@ -68,5 +71,20 @@ class CarTest {
         c1.heatAndAirconOn(10);
     }
 
+    private  static void testwiper() {
+        Wipers w1 = new Wipers();
+        w1.wiper();
+
+    }
+
+
+    private static void testEnum() {
+        System.out.println("Engine State" + EnumTest.EngineState.OFF);
+        System.out.println("Min bilsfarve" + EnumTest.ColourOfMyCar.WHITE);
+    }
+
+    private static void testEnum1() {
+        System.out.println("Vejret : " + EnumTest.Weather.valueOf("RAINY"));
+    }
 
 }

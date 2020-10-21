@@ -13,6 +13,7 @@ public class Car {
 
 
 
+
     Car(){
         this.password = "pw:1234";
         this.engineOn = false;
@@ -114,13 +115,6 @@ public class Car {
                 System.out.println("Varmen er tændt (temperature :" + tem + ")");
             }
         }
-
-
-
-
-
-
-
 
 
     }
